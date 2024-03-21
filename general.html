@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Include Font Awesome CSS -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .containerrr {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      header {
+        background-color: #333;
+        padding: 20px 0;
+        position: relative; /* Make header relative for absolute positioning */
+      }
+
+      .logo {
+        width: 10%;
+        height: 50px;
+        margin-left: 30px;
+      }
+
+      header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative; /* Make container relative for absolute positioning */
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex; /* Change to flex to make it horizontally arranged */
+      }
+
+      nav ul li {
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .menu-icon,
+      .close-icon {
+        display: none;
+      }
+
+      /* Media query for smaller screens */
+      @media only screen and (max-width: 768px) {
+        nav {
+          display: none; /* Hide the nav by default */
+          position: absolute;
+          top: 100%; /* Position below the header */
+          right: 0; /* Align to the right */
+          background-color: #333; /* Match header background */
+          width: 100%; /* Full width */
+        }
+
+        .menu-icon,
+        .close-icon {
+          position: absolute;
+          top: 5px;
+          right: 20px;
+          display: contents;
+          cursor: pointer;
+          color: white;
+          z-index: 1000; /* Ensure icons are above other content */
+        }
+
+        .menu-icon {
+          margin-right: 10px;
+        }
+
+        .close-icon {
+          display: none; /* Hide the close icon by default */
+        }
+
+        nav.active {
+          display: block; /* Display the nav when active */
+        }
+
+        nav.active ul {
+          flex-direction: column; /* Change to vertical arrangement */
+          text-align: start;
+          padding-top: 20px;
+          padding-left: 10px;
+          padding-bottom: 30px;
+        }
+      }
+
+      /* Transitions for the menu icon */
+      .menu-icon,
+      .close-icon {
+        transition: opacity 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="containerrr">
+        <img src="images/logo.jpg" alt="School Logo" class="logo" />
+        <!-- Menu Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fas fa-bars fa-lg"></i>
+          <!-- Font Awesome bars icon -->
+        </div>
+        <!-- Close Icon -->
+        <div class="close-icon" onclick="toggleMenu()">
+          <i class="fa fa-times" aria-hidden="true"></i>
+          <!-- <i class="fas fa-times fa-lg"></i> -->
+          <!-- Font Awesome times icon -->
+        </div>
+        <!-- End Menu Icon -->
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about">About Us</a></li>
+            <li><a href="academics">Academics</a></li>
+            <li><a href="admissions">Admissions</a></li>
+            <li><a href="events">Events</a></li>
+            <li><a href="contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      function toggleMenu() {
+        var nav = document.querySelector("nav");
+        var menuIcon = document.querySelector(".menu-icon");
+        var closeIcon = document.querySelector(".close-icon");
+
+        nav.classList.toggle("active");
+        menuIcon.classList.toggle("hide");
+        closeIcon.classList.toggle("hide");
+
+        if (nav.classList.contains("active")) {
+          closeIcon.style.display = "block"; // Show the close icon
+          menuIcon.style.display = "none"; // Hide the menu icon
+        } else {
+          closeIcon.style.display = "none"; // Hide the close icon
+          menuIcon.style.display = "block"; // Show the menu icon
+        }
+      }
+    </script>
+  </body>
+</html>

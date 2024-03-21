@@ -1,0 +1,203 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* Responsive layout - tablet screens */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Responsive layout - mobile screens */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+/* Styling for sections */
+section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* About section */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-text {
+  flex: 0 0 60%;
+  margin-right: 30px;
+}
+
+.about-text h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}
+
+.about-image {
+  flex: 0 0 30%;
+  max-width: 400px;
+}
+
+.about-image img{
+    width: 100%;
+    
+}
+
+.mission-vision {
+  text-align: center;
+}
+
+.mission-vision p {
+  margin-bottom: 20px;
+}
+
+.testimonials {
+  padding: 50px 0;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial-author {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.author-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.author-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author-info {
+  font-size: 18px;
+  color: #333;
+}
+
+.leadership-team {
+  text-align: center;
+}
+
+.member {
+  margin-bottom: 30px;
+}
+
+.member-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.member-role {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+
+}
+
+.facilities {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.facilities h2 {
+  color: #333;
+}
+
+.facilities-icon {
+  font-size: 48px;
+  color: #ff6600;
+  margin-bottom: 20px;
+}
+
+.facilities-description {
+  color: #555;
+}
+
+.admissions {
+  text-align: center;
+}
+
+.admissions h2 {
+  color: #333;
+}
+
+.admissions-icon {
+  font-size: 48px;
+  color: #ff6600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.admissions-description {
+  color: #555;
+}

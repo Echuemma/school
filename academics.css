@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+        font-size: 78px; 
+        color: yellow; 
+        align-items: center;
+        text-align: center;
+      }
+  }
+  
+  /* Styling for sections */
+  section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Logos for sections */
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 78px; 
+    color: red; 
+    align-items: center;
+    text-align: center;
+   padding: auto;
+    margin-bottom: 30px;
+  }
+  
+  /* Testimonials */
+  .testimonial {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  blockquote {
+    font-size: 20px;
+    font-style: italic;
+    color: #333;
+  }
+  
+  cite {
+    display: block;
+    margin-top: 20px;
+    font-style: normal;
+    color: #777;
+  }
+  
+  /* Summary section */
+  #summaryy {
+    background-color: #e9f4f9;
+    padding: 50px 0;
+  }
+  
+  #summaryy .container {
+    text-align: center;
+  }
+  
+  #summaryy h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  #summaryy p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+  }
